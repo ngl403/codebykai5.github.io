@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Miss Moko</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #ffe6e6;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    h1 {
+      color: #d6336c;
+      font-size: 2em;
+    }
+    img {
+      width: 150px;
+      margin: 20px 0;
+    }
+    .buttons {
+      display: flex
+      gap: 20px;
+    }
+    button {
+      padding: 10px 20px;
+      font-size: 1.2em;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .yes {
+      background-color: #28a745;
+      color: white;
+    }
+    .no {
+      background-color: #dc3545;
+      color: white;
+      position: relative;
+    }
+    .no:hover {
+      position: absolute;
+      top: calc(50% - 25px);
+      left: calc(50% - 50px);
+      transform: translate(
+        calc(100px - 200px * Math.random()),
+        calc(100px - 200px * Math.random())
+      );
+    }
+  </style>
+</head>
+<body>
+  <h1>Miss Moko?</h1>
+  <img src="https://media.tenor.com/z2v7IY7PgiUAAAAi/cat-love.gif" alt="Cut cat" />
+  <div class="buttons">
+    <button class="yes" onclick="alert('YAY! Miss rin kita!')">Yes</button>
+    <button class="no" onmouseover="moveButton(this)">No</button>
+  </div>
+
+  </script>
+</body>
+</html>
